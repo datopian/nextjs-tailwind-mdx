@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
+import Nav from './nav'
+
 export default function Layout({ children, title='' }) {
   return (
     <>
@@ -10,6 +12,7 @@ export default function Layout({ children, title='' }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Nav />
       <main>
         {children}
       </main>
