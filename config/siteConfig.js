@@ -1,7 +1,7 @@
 const siteConfig = {
   title: 'Next.js Starter Template',
   author: 'Rufus Pollock',
-  ownerLogo: '
+  ownerLogo: '',
 }
 
 module.exports = siteConfig
