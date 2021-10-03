@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
-import Nav from './nav'
+import Nav from './Nav'
 
 export default function Layout({ children, title='' }) {
   return (

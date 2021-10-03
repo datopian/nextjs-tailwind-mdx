@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 import parse from '../lib/mdx.js'
-import MdxPage from '../components/mdx'
+import MdxPage from '../components/MDX'
 
 
 export default function Page({ source, frontMatter }) {
