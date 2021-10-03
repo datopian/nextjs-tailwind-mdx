@@ -6,21 +6,27 @@ Includes instructions on how to rapidly customize such a site.
 
 ## The setup
 
-* [x] NextJS + Tailwind. NextJS default tailwindcss example (https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
-* [x] Common layout. Add a components/layout.js and use that to provide a standard them for all pages
-  * [x] Default Footer
-  * [ ] Default NavBar
-* [ ] We add markdown / MDX rendering support. All markdown/MDX in `/content/` gets auto-rendered into the site.
-* Support common public config e.g. site title etc (secret config in environment variables)
+* NextJS + Tailwind. NextJS default tailwindcss example (https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
+* Common layout. Add a components/layout.js and use that to provide a standard them for all pages. Customizable NavBar and Footer
+* Markdown / MDX rendering support. All markdown/MDX in `/content/` gets auto-rendered into the site.
+* Support common public config e.g. site title etc (secret config in environment variables) **DONE: 
 
-TODO: how do we do Layouts (theme). Several options https://nextjs.org/docs/basic-features/layouts (what i'm not clear is if you can pass options in `getLayout`)
+## Site config
 
-## Customize the Theme
+See `config` directory.
+
+## Content and Markdown
+
+### How to customize the content directory location?
+
+Open up `pages/[...slug].js` and change the `CONTENT_PATH` variable.
+
+## Theming
 
 We suggest you do the following:
 
-* [ ] Replace the favicon in `public/favicon.ico` or use the svg favicon ...
-* [ ] Add a logo: add image to `public` e.g. then open `components/layout.js` and replace footer logo link
+* Replace the favicon in `public/favicon.ico` or use the svg favicon ...
+* Add a logo: add image to `public` e.g. then open `components/layout.js` and replace footer logo link
 
 Tweaking the theme in general: open up `components/layout.js` and tweak away.
 
