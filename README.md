@@ -11,7 +11,8 @@ Pre-configured with the following;
 * Tailwind. Booted off NextJS default tailwindcss example (https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 * Basic common theme via components/Layout.js. Used to provide a standard them for all pages. Customizable NavBar and Footer with configurable nav links.
 * Markdown / MDX rendering support. All markdown/MDX in `/content/` gets auto-rendered into the site.
-* Support common public config e.g. site title etc (secret config in environment variables). See `Configuration` below.
+* Configurable e.g. site title etc (secret config in environment variables). See `Configuration` below.
+* Analytics: Google analytics support following https://github.com/vercel/next.js/tree/canary/examples/with-google-analytics
 
 ## Usage
 
