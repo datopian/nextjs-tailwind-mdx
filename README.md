@@ -4,6 +4,8 @@ A starter template for Next.JS with Tailwind and MDX. Intentionally limited feat
 
 Includes instructions on how to rapidly customize the site.
 
+Preview online at https://nextjs-tailwind-mdx-tau.vercel.app
+
 ## Features
 
 Pre-configured with the following;
