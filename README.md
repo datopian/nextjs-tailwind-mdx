@@ -10,11 +10,12 @@ Preview online at https://nextjs-tailwind-mdx-tau.vercel.app
 
 Pre-configured with the following;
 
-* Tailwind. Booted off NextJS default tailwindcss example (https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
-* Basic common theme via components/Layout.js. Used to provide a standard them for all pages. Customizable NavBar and Footer with configurable nav links.
+* Tailwind for easy styling. Booted off NextJS default tailwindcss example (https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 * Markdown / MDX rendering support. All markdown/MDX in `/content/` gets auto-rendered into the site.
 * Configurable e.g. site title etc (secret config in environment variables). See `Configuration` below.
+* Simple theming via `components/Layout.js`. Used to provide a standard them for all pages. Customizable NavBar and Footer with configurable nav links.
 * Analytics: Google analytics support following https://github.com/vercel/next.js/tree/canary/examples/with-google-analytics
+* SEO: basic SEO out of the box (via https://github.com/garmeeh/next-seo)
 
 ## Usage
 
@@ -37,7 +38,7 @@ npm run dev
 
 See `config` directory:
 
-* `config/siteConfig.js` for site wide configuration
+* `config/siteConfig.js` for site wide configuration especially for general theme (e.g. title) and SEO
 * `config/navLinks.js` for configuration of navigation links
 
 ### How to customize the content directory location?

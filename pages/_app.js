@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import Script from 'next/script'
 import { useRouter } from 'next/router'
+import { DefaultSeo } from 'next-seo'
 import 'tailwindcss/tailwind.css'
 
 import siteConfig from '../config/siteConfig.js'
@@ -25,6 +26,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <DefaultSeo
+        titleTemplate={'%s | ' + siteConfig.title}
+        defaultTitle={siteConfig.title}
+        description={siteConfig.description}
+        {...siteConfig.nextSeo}
+      />
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       {siteConfig.analytics &&
         <Script
