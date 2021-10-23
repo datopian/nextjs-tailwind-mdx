@@ -1,6 +1,6 @@
 # Next.js + Tailwind CSS + MDX Starter Template
 
-A starter template for Next.JS with Tailwind and MDX. Focus is simplicity and compositional model for adding features rather than "kitchen sink".
+A starter template for Next.JS with Tailwind and MDX. Intentionally limited feature-set to keep things simple. (If you want a more comprenhensive starter template check out https://github.com/timlrx/tailwind-nextjs-starter-blog).
 
 Includes instructions on how to rapidly customize the site.
 
