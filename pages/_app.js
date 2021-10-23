@@ -55,7 +55,7 @@ function MyApp({ Component, pageProps }) {
           }}
         />
       }
-      <Layout>
+      <Layout title={pageProps.title}>
         <Component {...pageProps} />
       </Layout>
     </>

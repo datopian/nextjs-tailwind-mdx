@@ -5,7 +5,7 @@ import parse from '../lib/mdx.js'
 import MdxPage from '../components/MDX'
 
 
-export default function Page({ source, frontMatter }) {
+export default function Page({ source, frontMatter, title }) {
   return (
     <MdxPage source={source} frontMatter={frontMatter} />
   )
@@ -25,6 +25,7 @@ export const getStaticProps = async ({ params }) => {
     props: {
       source: mdxSource,
       frontMatter: frontMatter,
+      title: frontMatter.title
     },
   }
 }
