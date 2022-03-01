@@ -28,7 +28,7 @@ export default function Layout({ children, title='' }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={siteConfig.authorLogo} alt="{siteConfig.author} Logo" className="ml-2 h-6 block" />
+            <img src={siteConfig.authorLogo} alt={siteConfig.author} className="ml-2 h-6 block" />
           </a>
         </p>
       </footer>
