@@ -25,7 +25,7 @@ export const getStaticProps = async ({ params }) => {
     props: {
       source: mdxSource,
       frontMatter: frontMatter,
-      title: frontMatter.title
+      title: frontMatter.title || ''
     },
   }
 }
