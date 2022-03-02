@@ -25,10 +25,6 @@ function MyApp({ Component, pageProps }) {
   }
   // end Google Analytics
   
-  const router = useRouter()
-  console.log(pageProps)
-  console.log(router.pathname)
-
   return (
     <>
       <DefaultSeo
