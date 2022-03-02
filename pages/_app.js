@@ -6,6 +6,7 @@ import 'tailwindcss/tailwind.css'
 
 import siteConfig from '../config/siteConfig.js'
 import Layout from '../components/Layout'
+import MdxPage from '../components/MDX'
 import * as gtag from '../lib/gtag'
 
 function MyApp({ Component, pageProps }) {
@@ -23,6 +24,10 @@ function MyApp({ Component, pageProps }) {
     }, [router.events])
   }
   // end Google Analytics
+  
+  const router = useRouter()
+  console.log(pageProps)
+  console.log(router.pathname)
 
   return (
     <>
@@ -56,10 +61,19 @@ function MyApp({ Component, pageProps }) {
         />
       }
       <Layout title={pageProps.title}>
-        <Component {...pageProps} />
+        { Component.layout == 'js' &&
+          <Component {...pageProps} />
+        }
+        { Component.layout != 'js' &&
+        <MdxPage children={{ Component, pageProps }} />
+        }
       </Layout>
     </>
   )
 }
+
+      // if this is a markdown page use this layout by default ...
+      // const MyLayout = pageProps.
+  
 
 export default MyApp

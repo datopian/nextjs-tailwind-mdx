@@ -18,3 +18,5 @@ export default function Home() {
     </>
   )
 }
+
+Home.layout = 'js'
